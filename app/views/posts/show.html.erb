@@ -1,0 +1,9 @@
+<h1><%= @post.title %></h1>
+
+<p>By <%= @post.user.full_name %> - <%= @post.created_at.to_fs(:long) %></p> 
+
+<p><%= @post.body %></p>
+
+<% if session[:user_id] == @post.user.id %>
+  <%= link_to "Edit", edit_post_path(@post) %>
+<% end %>

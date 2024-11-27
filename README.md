@@ -1,24 +1,21 @@
-# README
+This is my first big assignment from the "Practical Ruby on Rails Course" from Mix & Go.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Assigment
 
-Things you may want to cover:
+Build a simple blog.
 
-* Ruby version
+Add a Post model which has title and body as its fields, which allows users to create posts.
 
-* System dependencies
+Users should be able to:
 
-* Configuration
+- Create posts
 
-* Database creation
+- List all the posts (displaying the title and author - each post should belong to a user)
 
-* Database initialization
+- Update their own posts
 
-* How to run the test suite
+- Show the details page of a specific post
 
-* Services (job queues, cache servers, search engines, etc.)
+If someone is not logged in, he/she can only see posts, but not edit them.
 
-* Deployment instructions
-
-* ...
+Finally, upload your code to Github, and paste the repository link here.
