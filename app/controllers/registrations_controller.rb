@@ -8,9 +8,12 @@ class RegistrationsController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to "/"
+      redirect_to register_success_path
     else
     end
+  end
+
+  def success
   end
 
   private

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # Registrations
   resources :registrations, only: [ :new, :create ]
   get "register", to: "registrations#new"
+  get "register_success", to: "registrations#success"
 
   # Login
   resources :logins, only: [ :new, :create ]
