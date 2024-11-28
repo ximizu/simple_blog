@@ -27,13 +27,5 @@
     <!-- Main navigation -->
     <%= render "layouts/main_menu" %>
     <%= yield %>
-    
-    <strong>Logs</strong>
-    <ul>
-      <li>user_connected => <%= user_connected %></li>
-      <li>current_user => <%= user_connected %></li>
-      <li>session[:user_id] => <%= session[:user_id] %></li>
-      <li>session[:user] => <%= session[:user] %></li>
-    </ul>
   </body>
 </html>

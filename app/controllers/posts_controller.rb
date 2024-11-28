@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   def index
-    user_connected
     @posts = Post.all
   end
 
@@ -13,6 +12,7 @@ class PostsController < ApplicationController
   end
 
   def new
+    redirect_to posts_path unless session[:user_id]
     @post = Post.new
   end
 
@@ -29,6 +29,7 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
+    redirect_to @post unless session[:user_id]
   end
 
   def update
